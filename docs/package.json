@@ -1,0 +1,29 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandhuKm/weatherapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anandhuKm/weatherapp/issues"
+  },
+  "homepage": "https://github.com/anandhuKm/weatherapp#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "expess": "0.0.1-security",
+    "express": "^4.17.1",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.5.2",
+    "mongoose": "^5.8.9",
+    "request": "^2.88.0"
+  }
+}
