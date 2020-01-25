@@ -1,6 +1,6 @@
 const config = {
   apps: {
-    port: 7007
+    port: 5555
   },
   db: {
     host: 'localhost',

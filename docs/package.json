@@ -4,14 +4,13 @@
   "description": "",
   "main": "config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anandhuKm/weatherapp.git"
   },
-  "author": "",
+  "author": "Anandhu K M",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/anandhuKm/weatherapp/issues"
@@ -25,5 +24,9 @@
     "mongodb": "^3.5.2",
     "mongoose": "^5.8.9",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.5",
+    "supertest": "^0.13.0"
   }
 }

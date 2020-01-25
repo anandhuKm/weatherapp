@@ -1,0 +1,6 @@
+trap "exit" INT
+while :
+do
+    cd test
+    npm test -e ||break
+done
