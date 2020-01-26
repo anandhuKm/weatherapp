@@ -6,8 +6,9 @@ metadata:
   app: weather
 spec:
  replicas: 3
- strategy: Recreate
-template:
+ strategy:
+  type: Recreate
+ template:
   metadata:
     labels:
       app: weather
