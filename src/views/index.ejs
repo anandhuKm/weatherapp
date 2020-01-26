@@ -48,9 +48,38 @@
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
-                    What's the weather?
+                    What's the weather!
                 </h1>
             </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="box">
+            <article class="media">
+                <div class="media-left">
+                    <figure class="image is-50x50">
+                        <img src="http://openweathermap.org/img/w/<%= weather.icon %>.png" alt="Image">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <div class="content">
+                        <p>
+                            <span class="title">
+                                <%= weather.city %>,
+                                <%=weather.country%></span>
+                            <br>
+                            <span class="title">
+                                <%= weather.temperature %>° C</span>
+                            <br>
+                            <%= weather.description %>
+                            <span class="subtitle">Min :
+                                <%= weather.minimum %> Max :
+                                <%=weather.maximum%></span>
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
     <section class="section">
