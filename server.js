@@ -52,7 +52,6 @@ var datatoshow = {}
     })
 
 
-
 var data1 = { weather: weather }
 
 const weathershowrouter = require('./src/routes/weathershow_routes')(data1)
