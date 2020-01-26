@@ -1,12 +1,12 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-name: weather
-labels:
+ name: weather
+ labels:
   app: weather
 spec:
-strategy:
-  type: Recreate
+ replicas: 3
+ strategy: Recreate
 template:
   metadata:
     labels:
