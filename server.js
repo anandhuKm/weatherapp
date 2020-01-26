@@ -23,7 +23,6 @@ var datatoshow = {}
 
 
 
-
     url = `https://api.openweathermap.org/data/2.5/forecast?q=${cityname},${country}&units=metric&appid=2a39502a86b5e636c2547b870d39d724`
     request(url, (error, response, body) => {
         weatherapi = JSON.parse(body);
