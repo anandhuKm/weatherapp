@@ -1,8 +1,8 @@
 var request = require('supertest');
 var config = require('../config.js')
 // var app = require('../server.js');
-var port = config.apps.port
-var url = 'localhost:'+port
+// var port = config.apps.port
+var url = 'localhost:'+5556
 
 describe('GET /test',function(){
     it('respond with Stockholm',function(done){
