@@ -1,0 +1,38 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+name: weather
+labels:
+  app: weather
+spec:
+strategy:
+  type: Recreate
+template:
+  metadata:
+    labels:
+      app: weather
+      tier: weather
+  spec:
+    containers:
+    - name: weather
+      image: anandhukm/weather:latest
+      imagePullPolicy: Always
+      ports:
+      - containerPort: 5555
+        name: weather
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+name: weather
+labels:
+  app: weather
+spec:
+ports:
+  - port: 5555
+    targetPort: 5555
+selector:
+  app: weather
+  tier: weather
+type: LoadBalancer
